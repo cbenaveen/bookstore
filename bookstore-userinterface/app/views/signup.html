@@ -1,0 +1,19 @@
+<div class="login-card">
+    <h1>Sign Up</h1>
+
+    <p>Dont have an account yet. Just provide us few information to get start.</p>
+
+    <input type="text" name="emailId" placeholder="Email Address" ng-model="userAccount.emailId">
+    <input type="text" name="userName" placeholder="Full Name" ng-model="userAccount.fullName">
+    <input type="password" name="pass" placeholder="Password" ng-model="userAccount.password">
+
+    <div class="isa_error" ng-show="formErrorMessage.length > 0">
+        {{formErrorMessage}}
+    </div>
+
+    <input type="button" name="login" class="login login-submit" value="Sign Up" ng-click="createUserAccount()">
+
+    <div class="login-help">
+        <a href="#/">Login</a>
+    </div>
+</div>

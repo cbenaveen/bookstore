@@ -4,4 +4,16 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  	<servlet-name>userAccount</servlet-name>
+  	<servlet-class>com.learnings.bookstore.servlets.UserAccountServlet</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>userAccount</servlet-name>
+  	<url-pattern>/api/v1/users/*</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
